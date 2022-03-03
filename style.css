@@ -1,0 +1,177 @@
+:root{
+    --primary-color:#FBEAFF;
+    --background-color:#845EC2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* container 1 */
+html{
+    font-family:'roboto';
+}
+.s1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background: var(--background-color);
+    text-align: center;
+    padding: 20px;
+}
+.container p{
+    color: #ccc;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.type-text{
+    color: #FF8066;
+    font-weight: normal;
+}
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    color:transparent;
+    margin-left:4px;
+}
+.animation{
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%{
+        background-color:#ccc;
+    }45%{
+        background-color:#ccc;
+    }50%{
+        background-color: transparent;
+    }99%{
+        background-color: transparent;
+    }100%{
+        background-color:#ccc;
+    }
+}
+#fp-nav span,#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-Color:#ccc !important
+}
+#fp-nav ul li .fp-tooltip.fp-right {
+    font-weight: 700;
+}
+#fp-nav ul, .fp-slidesNav ul {
+    margin-left: 35px !important;
+    padding: 0;
+}
+#fp-nav.fp-right {
+    top:50px;
+
+}
+/* container 2 slide 1*/
+.s2{
+    background-color: var(--background-color);
+}
+.student{
+    display: flex!important;
+    padding: 25px;
+}
+h1{
+    color:#ccc;
+    max-width: 350px;
+}
+.comments-wrapper{
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    align-items: flex-start;
+    background-color: #B39CD0;
+    margin-top: 30px;
+    border-radius:15px;
+    align-items: center;
+    padding: 0 17px;
+}
+.comment-item{
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin:35px 17px;
+    min-width: 400px;
+    scroll-snap-align:center;
+
+}
+.comment-item p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+@media screen and (max-width: 480px){
+    .comment-item{
+        min-width: 275px;
+        align-items: center;
+    }
+    .comment-item::before{
+        display: none;
+    }
+    .comment-item p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+.comment-item::before{
+    content: url(https://www.nodemy.vn/images/icon/icon9.svg);
+    position: absolute;
+    right: 35px;
+    top:17px;
+    filter: brightness(100);
+}
+.comment-item img{
+    width: 50px;
+    border-radius:50% ;
+    margin-right: 15px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#fp-nav ul li .fp-tooltip {
+    color:#ccc !important;
+}
+.title span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.comment-item p {
+    padding: 0 10px;
+}
+html::-webkit-scrollbar{
+    width: 0;
+}
+.comments-wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.comments-wrapper::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    border-radius:10px;
+}
+.comments-wrapper::-webkit-scrollbar-track{
+    background-color: #eee;
+    border-radius: 0 0 15px 15px;
+}
+html{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-snap-stop: always;
+}
+.section{
+    scroll-snap-align: start;
+}
+/* container 2 slide 2 */
+.teacher{
+    display: flex !important;
+    padding: 25px;
+}

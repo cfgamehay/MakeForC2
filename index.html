@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fullpage.min.css">
+</head>
+
+<body>
+    <div id="fullpage" class="wrapper">
+        <div class="section s1">
+            <div class="container">
+                <p>Chúng ta <span class="type-text"></span><span class='cursor animation'>.</span></p>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="slide student">
+                <h1>Họ đồn gì về lớp ta?</h1>
+                <div class="comments-wrapper">
+                    <div class="comment-item">
+                        <div class="title">
+                            <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/256815762_929779057946908_1287142568968455885_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=hveQEMEbRWUAX9r4PT3&_nc_ht=scontent-hkt1-2.xx&oh=00_AT92B6HeEnmbriFPYtZwFj57GrNAnstK0V85hVSX4N5oRw&oe=6223F239"
+                                alt="">
+                            <span>Nhỏ lớp trưởng</span>
+                        </div>
+                        <p>Mấy con quỷ cái mất nết, tui tụi bây rất tốt nhưng với thân phân thượng đẳng 
+                            "lớp trưởng" ta xin phép được khinh thường chúng bầy ...
+                        </p>
+                    </div>
+                    <div class="comment-item">
+                        <div class="title">
+                            <img src="https://zpsocial-f46-org.zadn.vn/a95011f23ab5d5eb8ca4.jpg" alt="">
+                            <span>Đại ca</span>
+                        </div>
+                        <p>Hôm qua là một ngày đẹp trời... 
+                            nhưng hôm nay khác hôm qua, hôm nay 
+                            mình phải dạy C2 hai tiết toán, phải 
+                            quản lý chúng nó 2 tiết sinh hoạt, haiz
+                            nêu có nắm lá ngón trong tay, 'Mị' sẽ ăn ngay
+                            mà không chần chừ
+                        </p>
+                    </div>
+                    <div class="comment-item">
+                        <div class="title">
+                            <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/256815762_929779057946908_1287142568968455885_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=hveQEMEbRWUAX9r4PT3&_nc_ht=scontent-hkt1-2.xx&oh=00_AT92B6HeEnmbriFPYtZwFj57GrNAnstK0V85hVSX4N5oRw&oe=6223F239"
+                                alt="">
+                            <span>Nhỏ lớp trưởng</span>
+                        </div>
+                        <p>Bingounzd đang xin In tư nhưng chưa ai cho cả ;((</p>
+                    </div>
+                    <div class="comment-item">
+                        <div class="title">
+                            <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/256815762_929779057946908_1287142568968455885_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=hveQEMEbRWUAX9r4PT3&_nc_ht=scontent-hkt1-2.xx&oh=00_AT92B6HeEnmbriFPYtZwFj57GrNAnstK0V85hVSX4N5oRw&oe=6223F239"
+                                alt="">
+                            <span>Nhỏ lớp trưởng</span>
+                        </div>
+                        <p>Bingounzd đang xin In tư nhưng chưa ai cho cả ;((</p>
+                    </div>
+                    <div class="comment-item">
+                        <div class="title">
+                            <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/256815762_929779057946908_1287142568968455885_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=hveQEMEbRWUAX9r4PT3&_nc_ht=scontent-hkt1-2.xx&oh=00_AT92B6HeEnmbriFPYtZwFj57GrNAnstK0V85hVSX4N5oRw&oe=6223F239"
+                                alt="">
+                            <span>Nhỏ lớp trưởng</span>
+                        </div>
+                        <p>Zừa ồn Zừa ngu, đoàn kết bị F0, F1, cái lớp mớt nết .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide teacher">
+                <h1>Giang hồ đồn gì về đại ca?(đang xây dựng)</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            navigation: true,
+            controlArrows: false,
+            slidesNavigation: true,
+            touchSensitivity: 20,
+            autoScrolling: true,
+            responsiveWidth: 750,
+            afterResponsive: function (isResponsive) {
+                if (isResponsive) {
+                    document.querySelector('.comments-wrapper').addEventListener('touchstart', function (e) {
+                        fullpage_api.setAllowScrolling(false, 'left , right')
+                    })
+                    document.querySelector('.comments-wrapper').addEventListener('touchend', function (e) {
+                        fullpage_api.setAllowScrolling(true, 'left , right')
+                    })
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
